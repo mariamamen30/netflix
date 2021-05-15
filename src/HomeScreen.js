@@ -1,4 +1,5 @@
 import React from "react";
+import Banner from "./Banner";
 import "./HomeScreen.css";
 import Navbar from "./Navbar";
 
@@ -7,66 +8,8 @@ const HomeScreen = () => {
     <nav className="homeScreen">
       {/* Navbar */}
       <Navbar />
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
-      <div>text</div>
       {/* Header */}
+      <Banner />
       {/* Movies' Rows */}
     </nav>
   );
