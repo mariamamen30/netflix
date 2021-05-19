@@ -6,11 +6,12 @@ import requests from "./Requests";
 const Banner = () => {
   const [movie, setMovie] = useState([]);
 
+  const baseUrl = "https://image.tmdb.org/t/p/original/";
   //getting a random movie form apis
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(requests.fetchPopular);
-      console.log(request.data.results);
+      // console.log(request.data.results);
       setMovie(
         request.data.results[
           Math.floor(Math.random() * request.data.results.length - 1)
@@ -31,7 +32,7 @@ const Banner = () => {
     <header
       className="banner"
       style={{
-        backgroundImage: `url('https://image.tmdb.org/t/p/original/${movie?.backdrop_path}')`,
+        backgroundImage: `url('${baseUrl}${movie?.backdrop_path}')`,
         // color: "black",
       }}
     >
