@@ -1,0 +1,94 @@
+.login {
+  position: relative;
+  height: 100%;
+  background-image: url("https://i.pinimg.com/originals/df/36/22/df36227e94aadd202bcd3a9dd7cc6c5c.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.login__gradient {
+  height: 100vh;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.login__logo {
+  position: fixed;
+  left: 0;
+  width: 150px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+
+.login__button {
+  position: fixed;
+  right: 20px;
+  top: 15px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #e50914;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.login__button:hover {
+  cursor: pointer;
+}
+
+.login__body {
+  z-index: 1;
+  color: white;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.login__body > h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.login__body > h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.login__input {
+  margin: 20px;
+}
+/* .login__input > form {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+} */
+.login__input > form > input {
+  padding: 15px;
+  outline-width: 0;
+  height: 16px;
+  width: 40%;
+  border: none;
+}
+
+.login__getStarted {
+  padding: 16px 20px;
+  font-size: 0.8rem;
+  border: none;
+  color: white;
+  background-color: #e50914;
+  font-weight: 600;
+  cursor: pointer;
+}
