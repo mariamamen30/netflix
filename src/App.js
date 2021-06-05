@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import HomeScreen from "./Screens/HomeScreen";
+import ProfileScreen from "./Screens/ProfileScreen";
 import Login from "./Screens/Login";
 
 import "./App.css";
@@ -27,11 +28,11 @@ function App() {
         // user = userAuth;
       } else {
         //logged out
-        dispatch(logout);
+        dispatch(logout());
       }
     });
     return unsubscribe;
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="app">
@@ -40,6 +41,7 @@ function App() {
           <Login />
         ) : (
           <Switch>
+            <Route exact path="/profile" component={ProfileScreen} />
             <Route exact path="/" component={HomeScreen} />
           </Switch>
         )}
