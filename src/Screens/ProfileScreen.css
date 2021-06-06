@@ -69,6 +69,7 @@
 }
 .profileScreen__plan-btn {
   border: none;
+  height: 30px;
   background-color: #e50920;
   color: white;
   padding: 0px 20px;
@@ -98,4 +99,5 @@
   color: white;
   padding: 0px 20px;
   font-weight: 400;
+  height: 30px;
 }
