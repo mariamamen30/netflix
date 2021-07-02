@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomeScreen from "./Screens/HomeScreen";
 import ProfileScreen from "./Screens/ProfileScreen";
 import Login from "./Screens/Login";
+import PaymentScreen from "./Screens/PaymentScreen";
 
 import "./App.css";
 import { auth } from "./firebase";
@@ -41,6 +42,7 @@ function App() {
           <Login />
         ) : (
           <Switch>
+            <Route exact path="/payment" component={PaymentScreen} />
             <Route exact path="/profile" component={ProfileScreen} />
             <Route exact path="/" component={HomeScreen} />
           </Switch>

@@ -6,6 +6,8 @@ import { auth } from "../firebase";
 import Navbar from "../Navbar";
 import "./ProfileScreen.css";
 
+//STRIPE
+
 const ProfileScreen = () => {
   const user = useSelector(selectUser);
   const history = useHistory();
@@ -34,14 +36,24 @@ const ProfileScreen = () => {
                     <h4>Netflix Standard</h4>
                     <span>1800p</span>
                   </div>
-                  <button className="profileScreen__plan-btn">Subscribe</button>
+                  <button
+                    className="profileScreen__plan-btn"
+                    onClick={history.push("/payment")}
+                  >
+                    Subscribe
+                  </button>
                 </div>
                 <div className="profileScreen__plan">
                   <div className="profileScreen__plan-details">
                     <h4>Netflix Standard</h4>
                     <span>480p</span>
                   </div>
-                  <button className="profileScreen__plan-btn">Subscribe</button>
+                  <button
+                    className="profileScreen__plan-btn"
+                    onClick={history.push("/payment")}
+                  >
+                    Subscribe
+                  </button>
                 </div>
 
                 <div className="profileScreen__plan">
